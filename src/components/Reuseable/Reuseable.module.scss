@@ -1,0 +1,16 @@
+
+.capsule {
+  border: 1px solid black;
+  margin: 25px;
+  padding: 50px;
+  text-align: center;
+
+  h2 {
+    display: flex;
+    display: grid;
+    transition: all 1s linear;
+    box-shadow: 3px 3px 0 #000;
+    box-sizing: border-box;
+    filter: grayscale(50%);
+  }
+}
