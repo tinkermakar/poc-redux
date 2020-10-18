@@ -1,15 +1,15 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import Reuseable from '../Reuseable/Reuseable';
-import store from '../../redux/store';
-import { SET_THRESHOLD } from '../../redux/types';
+import setThreshold from '../../redux/actions/setThreshold';
 
 const Container = () => {
   const threshold = useSelector(state => state.threshold);
+  const dispatch = useDispatch();
 
   return (
     <Reuseable name="Container">
-      <input type="number" value={threshold} onChange={event => store.dispatch({ type: SET_THRESHOLD, payload: event.target.value })} />
+      <input type="number" value={threshold} onChange={event => dispatch(setThreshold(event.target.value))} />
     </Reuseable>
   );
 };

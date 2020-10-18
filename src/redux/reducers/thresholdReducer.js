@@ -2,7 +2,7 @@ import { SET_THRESHOLD } from '../types';
 
 const thresholdReducer = (state = 0, action = {}) => {
   if (action.type === SET_THRESHOLD) {
-    return action.payload;
+    return parseInt(action.payload, 10);
   }
   else return state;
 };
