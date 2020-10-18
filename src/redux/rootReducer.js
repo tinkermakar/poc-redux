@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
 import thresholdReducer from './reducers/thresholdReducer';
-import userReducer from './reducers/userReducer';
+import usersReducer from './reducers/userReducer';
 
 const rootReducer = combineReducers({
   threshold: thresholdReducer,
-  user: userReducer,
+  users: usersReducer,
 });
 
 export default rootReducer;

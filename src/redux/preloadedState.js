@@ -1,5 +1,5 @@
 const preloadedState = {
-  user: [
+  users: [
     {
       name: 'Alpha',
       age: 16,

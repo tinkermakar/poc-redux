@@ -13,7 +13,10 @@ export default Reuseable;
 
 Reuseable.propTypes = {
   name: PropTypes.string.isRequired,
-  children: PropTypes.objectOf(PropTypes.any),
+  children: PropTypes.oneOfType([
+    PropTypes.objectOf(PropTypes.any),
+    PropTypes.arrayOf(PropTypes.any),
+  ]),
 };
 
 Reuseable.defaultProps = {
